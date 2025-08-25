@@ -1,5 +1,75 @@
 ﻿@page
-@model ConcluidaModel
+@model razorweb.Pages.CanceladaModel
 @{
     ViewData["Title"] = "Tareas Canceladas";
+    var busqueda = ViewData["busqueda"] as string ?? "";
 }
+
+<div class="text-center mb-4">
+    <h2>Tareas Canceladas</h2>
+
+    <form method="get" class="d-flex justify-content-center mb-3">
+        <input type="text" name="busqueda" value="@busqueda" class="form-control w-50 me-2" placeholder="Buscar tarea cancelada..." />
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+</div>
+
+<div class="grid-container status-grid">
+    <div class="grid-item"><b>Nombre Tarea</b></div>
+    <div class="grid-item"><b>Fecha Vencimiento</b></div>
+    <div class="grid-item"><b>Estado</b></div>
+
+    @foreach (var tarea in Model.TareasCanceladas)
+    {
+        <div class="grid-item">@tarea.nombreTarea</div>
+        <div class="grid-item">@tarea.fechaVencimiento</div>
+        <div class="grid-item">
+            <span class="badge bg-danger">@tarea.estado</span>
+        </div>
+    }
+
+    @if (!Model.TareasCanceladas.Any())
+    {
+        <div class="text-muted" style="grid-column: 1 / -1; text-align: center; padding: 2rem;">
+            No hay tareas canceladas
+        </div>
+    }
+</div>
+
+<style>
+    .grid-container.status-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .grid-item {
+        background-color: #2a2a4a;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid #444466;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 60px;
+    }
+
+    .grid-item b {
+        color: #00bfff;
+        font-size: 1.1rem;
+    }
+
+    .badge {
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-weight: 500;
+    }
+
+    .bg-danger {
+        background-color: #dc3545 !important;
+        color: #fff !important;
+    }
+</style>

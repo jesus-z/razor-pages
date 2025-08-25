@@ -1,4 +1,4 @@
-html {
+﻿/*html {
   font-size: 14px;
 }
 
@@ -19,4 +19,142 @@ html {
 
 body {
   margin-bottom: 60px;
+}*/
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+/* Contenedor principal */
+.wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* --- Encabezado --- */
+.main-header {
+    background-color: #3c8dbc;
+    color: #fff;
+    padding: 15px;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+    .main-header .logo {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .main-header .navbar-custom {
+        float: right;
+    }
+
+    .main-header .sidebar-toggle {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+/* --- Menú Lateral (Sidebar) --- */
+.main-sidebar {
+    position: fixed;
+    top: 60px; /* Debajo del header */
+    left: 0;
+    width: 230px;
+    height: 100%;
+    background-color: #222d32;
+    transition: left 0.3s ease;
+    z-index: 90;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .sidebar-menu li a {
+        display: block;
+        color: #b8c7ce;
+        padding: 12px 15px;
+        text-decoration: none;
+    }
+
+        .sidebar-menu li a:hover {
+            background-color: #1e282c;
+            color: #fff;
+        }
+
+    .sidebar-menu .header {
+        color: #4b646f;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+/* --- Contenido Principal --- */
+.content-wrapper {
+    min-height: calc(100vh - 120px); /* 60px del header + 60px del footer */
+    background-color: #ecf0f5;
+    margin-left: 230px; /* Espacio para el sidebar */
+    padding: 20px;
+    padding-top: 80px; /* Espacio para el header fijo */
+    transition: margin-left 0.3s ease;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: #fff;
+    padding: 15px;
+    color: #444;
+    text-align: center;
+    border-top: 1px solid #d2d6de;
+    clear: both;
+}
+
+/* --- Clases para la funcionalidad JS --- */
+.sidebar-closed .main-sidebar {
+    left: -230px;
+}
+
+.sidebar-closed .content-wrapper {
+    margin-left: 0;
+}
+
+/* Iconos (sin Font Awesome) */
+/* Puedes usar iconos de SVG o de texto si no quieres usar Font Awesome */
+.fa {
+    font-style: normal;
+}
+
+.fa-home:before {
+    content: "🏠";
+}
+
+.fa-user:before {
+    content: "🔒";
+}
+
+.fa-lock:before {
+    content: "🔒";
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*gap:20px;*/
+}
+
+.grid-item {
+    padding: 20px;
+    border: 1px solid #3c8dbc;
+    text-align: center;
 }

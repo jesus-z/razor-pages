@@ -1,0 +1,200 @@
+[
+  {
+    "idTarea": null,
+    "nombreTarea": "Escribir informe semanal",
+    "fechaVencimiento": "25/08/2025",
+    "estado": "Finalizado"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Planificar men\uFFFD semanal",
+    "fechaVencimiento": "20/08/2025",
+    "estado": "Cancelado"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Llamar al dentista",
+    "fechaVencimiento": "21/08/2025",
+    "estado": "Pendiente"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Comprar v\uFFFDveres",
+    "fechaVencimiento": "20/08/2025",
+    "estado": "Finalizado"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Pagar facturas",
+    "fechaVencimiento": "22/08/2025",
+    "estado": "Pendiente"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Hacer ejercicio",
+    "fechaVencimiento": "19/08/2025",
+    "estado": "Finalizado"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Limpiar la cocina",
+    "fechaVencimiento": "20/08/2025",
+    "estado": "En curso"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Enviar correo importante",
+    "fechaVencimiento": "19/08/2025",
+    "estado": "Finalizado"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Leer 30 minutos",
+    "fechaVencimiento": "20/08/2025",
+    "estado": "Pendiente"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Organizar el escritorio",
+    "fechaVencimiento": "21/08/2025",
+    "estado": "Pendiente"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Regar las plantas",
+    "fechaVencimiento": "20/08/2025",
+    "estado": "Finalizado"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Llevar la ropa a la lavander\uFFFDa",
+    "fechaVencimiento": "22/08/2025",
+    "estado": "Pendiente"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Investigar un nuevo curso online",
+    "fechaVencimiento": "25/08/2025",
+    "estado": "En curso"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Revisar presupuesto mensual",
+    "fechaVencimiento": "28/08/2025",
+    "estado": "Pendiente"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Hacer una copia de seguridad de los archivos",
+    "fechaVencimiento": "30/08/2025",
+    "estado": "Pendiente"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Llamar a un familiar",
+    "fechaVencimiento": "21/08/2025",
+    "estado": "Finalizado"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Actualizar el software del computador",
+    "fechaVencimiento": "23/08/2025",
+    "estado": "Pendiente"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Limpiar el ba\uFFFDo",
+    "fechaVencimiento": "24/08/2025",
+    "estado": "Pendiente"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Pasear al perro",
+    "fechaVencimiento": "19/08/2025",
+    "estado": "Finalizado"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Organizar un caj\uFFFDn de ropa",
+    "fechaVencimiento": "25/08/2025",
+    "estado": "Pendiente"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Programar la reuni\uFFFDn del equipo",
+    "fechaVencimiento": "22/08/2025",
+    "estado": "En curso"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Terminar el cap\uFFFDtulo de un libro",
+    "fechaVencimiento": "21/08/2025",
+    "estado": "Pendiente"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Preparar la comida para ma\uFFFDana",
+    "fechaVencimiento": "20/08/2025",
+    "estado": "En curso"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Agendar cita con el m\uFFFDdico",
+    "fechaVencimiento": "26/08/2025",
+    "estado": "Pendiente"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Sacar la basura",
+    "fechaVencimiento": "20/08/2025",
+    "estado": "Finalizado"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Revisar los correos electr\uFFFDnicos",
+    "fechaVencimiento": "19/08/2025",
+    "estado": "Finalizado"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Completar el formulario de registro",
+    "fechaVencimiento": "23/08/2025",
+    "estado": "En curso"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Planificar el viaje de fin de semana",
+    "fechaVencimiento": "29/08/2025",
+    "estado": "Pendiente"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Lavar el coche",
+    "fechaVencimiento": "24/08/2025",
+    "estado": "Pendiente"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Hacer un boceto de un dibujo",
+    "fechaVencimiento": "22/08/2025",
+    "estado": "En curso"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Ordenar la biblioteca",
+    "fechaVencimiento": "27/08/2025",
+    "estado": "Finalizado"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Comprar un regalo",
+    "fechaVencimiento": "25/08/2025",
+    "estado": "Finalizado"
+  },
+  {
+    "idTarea": null,
+    "nombreTarea": "Buscar nuevas recetas",
+    "fechaVencimiento": "20/08/2025",
+    "estado": "Pendiente"
+  }
+]

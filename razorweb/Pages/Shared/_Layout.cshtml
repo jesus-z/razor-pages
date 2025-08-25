@@ -3,48 +3,104 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - razorweb</title>
+    <title>@ViewData["Title"] - Razor Web</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/razorweb.styles.css" asp-append-version="true" />
+
     <style>
-      body {
-          background-color:aquamarine;
-      }
+        body {
+            background-color: #121426;
+            color: #e0e0ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        .sidebar {
+            background-color: #1f1f38;
+            min-height: 100vh;
+            width: 220px;
+            padding: 20px;
+            position: fixed;
+        }
+
+            .sidebar h4 {
+                color: #00bfff;
+                margin-bottom: 1rem;
+            }
+
+            .sidebar a {
+                display: block;
+                color: #b0b0ff;
+                padding: 12px 15px;
+                border-radius: 8px;
+                margin-bottom: 8px;
+                transition: 0.3s;
+            }
+
+                .sidebar a.active, .sidebar a:hover {
+                    background: linear-gradient(90deg, #6a5acd, #00bfff);
+                    color: #fff;
+                }
+
+        .main-content {
+            margin-left: 240px;
+            padding: 20px;
+        }
+        .navbar {
+            background-color: #1f1f38 !important;
+            border-bottom: 1px solid #444466;
+        }
+
+            .navbar .navbar-brand, .navbar .nav-link {
+                color: #b0b0ff !important;
+            }
+
+                .navbar .nav-link:hover {
+                    color: #00bfff !important;
+                }
+        footer {
+            background-color: #1f1f38;
+            color: #b0b0ff;
+            padding: 10px 0;
+            text-align: center;
+            border-top: 1px solid #444466;
+        }
+
+            footer a {
+                color: #00bfff;
+                text-decoration: none;
+            }
+
+                footer a:hover {
+                    text-decoration: underline;
+                }
     </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Cafeteria</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="sidebar">
+        <h4>📁 Menú</h4>
+        <a href="/" class="active">Tareas Asignadas</a>
+        <a href="/Concluida">Tareas Concluidas</a>
+        <a href="/Cancelada">Tareas Canceladas</a>
+    </div>
+
+    <div class="main-content">
+        <nav class="navbar navbar-expand-sm navbar-dark mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">RazorWeb Dashboard</a>
             </div>
         </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - razorweb - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
+    <footer>
+        &copy; 2025 - RazorWeb - <a asp-area="" asp-page="/Privacy">Privacy</a>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -54,4 +110,3 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
-
